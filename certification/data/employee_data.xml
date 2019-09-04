@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+     <record id ="entity_demo"
+           model="hr.employee">
+       <field name="name">Ceylan okuyucu</field>
+
+     </record>
+
+    <record id ="employee_demo"
+           model="employee.info">
+       <field name="name" eval="ref('entity_demo')"/>
+       <field name="identification_number">1234</field>
+       <field name="type">driving_license</field>
+   </record>
+    </odoo>
